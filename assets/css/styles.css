@@ -97,7 +97,9 @@ nav span {
 /* Cast page stylings */
 /* Create three equal columns that floats next to each other */
 .column {
-  width: 100%; }
+  width: 100%;
+  float: left;
+  height: 166px; }
 
 .column img {
   float: left;
@@ -301,3 +303,7 @@ a.current {
 #page h1 {
   text-align: center;
   padding: 14px 0; }
+
+#page .center-image {
+  margin: 0 auto;
+  display: block; }
