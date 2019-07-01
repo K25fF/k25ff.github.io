@@ -1,0 +1,303 @@
+body {
+  /*font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;*/
+  color: #ffffff;
+  margin: 0;
+  font-family: "courier", "monospace";
+  background-color: #535353; }
+
+/* NAVBAR STUFF */
+#navbar {
+  background-color: #0C0C0C;
+  color: #ffffff;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 1000px;
+  min-width: 800px;
+  font-size: 0px;
+  height: 102px; }
+
+nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  font-size: 20px;
+  max-width: 1000px;
+  min-width: 800px; }
+
+.navbutton {
+  font-family: inherit;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: inherit;
+  border: none;
+  cursor: pointer; }
+
+.navbutton:hover {
+  background-color: #111111; }
+
+nav span {
+  display: inline-block; }
+
+#leftlinks {
+  padding-left: 40px; }
+
+#rightlinks {
+  float: right;
+  padding-right: 40px;
+  padding-top: 5px; }
+
+/* Dropdowns */
+/* Style The Dropdown Button */
+.dropbtn {
+  font-family: inherit;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: inherit;
+  background-color: black;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  min-width: 160px;
+  z-index: 1; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #555555; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #111111; }
+
+/* Cast page stylings */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 166px; }
+
+.column img {
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px; }
+
+.column p {
+  margin-right: 5px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%; } }
+/* PINK-BASED COLOUR-SWITCHING */
+/* body */
+body.pink {
+  background: #644865;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#644865, #281e29);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#644865, #281e29);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#644865, #281e29);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#644865, #281e29);
+  /* Standard syntax */ }
+
+body.pink_1 {
+  background: #503d51;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#503d51, #282129);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#503d51, #282129);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#503d51, #282129);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#503d51, #282129);
+  /* Standard syntax */ }
+
+body.pink_2 {
+  background: #3c333c;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#3c333c, #282528);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#3c333c, #282528);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#3c333c, #282528);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#3c333c, #282528);
+  /* Standard syntax */ }
+
+/* content */
+body.pink .content {
+  background-color: #351e36; }
+
+body.pink_1 .content {
+  background-color: #2c1d2d; }
+
+body.pink_2 .content {
+  background-color: #2c1d2d; }
+
+/* other */
+body.pink #page {
+  background-color: #070004;
+  color: #FFF8FC; }
+
+body.pink_1 #page {
+  background-color: #030002;
+  color: #fffefe; }
+
+body.pink nav {
+  background-color: #070004; }
+
+body.pink_1 nav {
+  background-color: #030002; }
+
+body.pink #navbar {
+  background-color: #0B090C; }
+
+body.pink_1 #navbar {
+  background-color: #0C0B0C; }
+
+/* */
+/* Spooky-style, dim and/or dark */
+body.dark {
+  background-color: #282828; }
+
+body.dark .content {
+  background-color: #1b1b1b; }
+
+/* Other general Chiasmata page bits */
+.content {
+  background-color: #333333;
+  font-family: 'Arial', sans-serif;
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  max-width: 920px;
+  min-width: 600px;
+  padding: 0 40px;
+  overflow-y: hidden;
+  overflow-x: visible; }
+
+/* link colors */
+a:link {
+  color: #aaaaaa;
+  text-decoration: none; }
+
+a:visited {
+  color: #777777;
+  text-decoration: none; }
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:active {
+  color: #777777;
+  text-decoration: none; }
+
+a.current {
+  color: green; }
+
+#page {
+  background-color: #000000;
+  padding: 0 25px;
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  max-width: 750px;
+  min-width: 550px; }
+
+/* This is to make the things meet the bottom of the page, because margins in CSS are weird. */
+#page h1:first-of-type {
+  padding-top: 19px;
+  margin-top: 0px; }
+
+#page p:last-of-type, #page h2:last-of-type {
+  padding-bottom: 15px;
+  margin-bottom: 0px; }
+
+#page .dialogue {
+  margin-left: 56px; }
+
+.dialogue p {
+  margin: 5px; }
+
+#page .Sam {
+  color: #006cff; }
+
+#page .Aidan {
+  color: #00ff90; }
+
+#page .Daniel {
+  color: #ff5400; }
+
+#page .Bonnie {
+  color: #ffd800; }
+
+#page .Jacqueline {
+  color: #FF0000; }
+
+#page .Clara {
+  color: #88ff00; }
+
+#page .Leo {
+  color: #ffba00; }
+
+#page .Omar {
+  color: #593eff; }
+
+#page .David {
+  color: #ff9000; }
+
+#page .Dawn {
+  color: #3041ff; }
+
+#page .Ash {
+  color: #00ff00; }
+
+#page .Anders {
+  color: #ff0096; }
+
+#page .green_mystery {
+  color: #00ff69; }
+
+#page .orange_mystery {
+  color: #FF8B00; }
+
+#page img {
+  margin: 0 -25px; }
+
+#page h1 {
+  text-align: center;
+  padding: 14px 0; }
