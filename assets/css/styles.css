@@ -97,9 +97,7 @@ nav span {
 /* Cast page stylings */
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  height: 166px; }
+  width: 100%; }
 
 .column img {
   float: left;
@@ -116,9 +114,11 @@ nav span {
   clear: both; }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .column {
-    width: 100%; } }
+    float: left;
+    width: 33.33%;
+    height: 166px; } }
 /* PINK-BASED COLOUR-SWITCHING */
 /* body */
 body.pink {
