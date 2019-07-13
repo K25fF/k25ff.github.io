@@ -1,1 +1,1 @@
-keep_files: ['CNAME']
+keep_files: [/CNAME]
