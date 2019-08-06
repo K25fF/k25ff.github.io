@@ -177,6 +177,11 @@ body.pink_2 {
   top: 700px;
   left: -150px; }
 
+.secret_03 {
+  position: absolute;
+  top: 150px;
+  left: -300px; }
+
 /* content */
 body.pink .content {
   background-color: #351e36; }
@@ -260,7 +265,7 @@ a.current {
   position: relative; }
 
 /* This is to make the things meet the bottom of the page, because margins in CSS are weird. */
-.content h1:first-of-type {
+.content h1:first-of-type, .content h2:first-of-type, .content h3:first-of-type {
   padding-top: 19px;
   padding-bottom: 15px;
   margin-top: 0px; }
