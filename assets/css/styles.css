@@ -182,6 +182,12 @@ body.pink_2 {
   top: 150px;
   left: -300px; }
 
+.secret_04 {
+  /* page 150 */
+  position: absolute;
+  top: 400px;
+  left: -170px; }
+
 /* content */
 body.pink .content {
   background-color: #351e36; }
