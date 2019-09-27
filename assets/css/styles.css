@@ -188,6 +188,12 @@ body.pink_2 {
   top: 400px;
   left: -170px; }
 
+.secret_05 {
+  /* page 183 */
+  position: absolute;
+  top: 550px;
+  left: -160px; }
+
 /* content */
 body.pink .content {
   background-color: #351e36; }
@@ -338,8 +344,14 @@ a.current {
   text-align: right;
   font-family: 'Courier New', Courier, monospace; }
 
+#page .small {
+  font-size: 10px; }
+
 #page img {
   margin: 0 -25px; }
+
+#page .spook {
+  color: #ffffff; }
 
 #page h1 {
   text-align: center;
