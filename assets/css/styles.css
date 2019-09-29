@@ -353,6 +353,14 @@ a.current {
 #page .spook {
   color: #ffffff; }
 
+#page .error {
+  font-family: 'Lucidia Console', Lucida, monospace; }
+
+#page .Archie {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-decoration: line-through; }
+
 #page h1 {
   text-align: center;
   padding: 14px 0; }
