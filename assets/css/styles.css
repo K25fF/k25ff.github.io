@@ -233,6 +233,13 @@ body.dark {
 body.dark .content {
   background-color: #1b1b1b; }
 
+/* Someone else is spooky */
+body.orange {
+  background-color: #5c514d; }
+
+body.orange .content {
+  background-color: #38322f; }
+
 /* Other general Chiasmata page bits */
 .content {
   background-color: #333333;
