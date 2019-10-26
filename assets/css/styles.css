@@ -357,16 +357,17 @@ a.current {
 #page img {
   margin: 0 -25px; }
 
-#page .spook {
+#page .system {
   color: #ffffff; }
-
-#page .error {
-  font-family: 'Lucidia Console', Lucida, monospace; }
 
 #page .Archie {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   text-decoration: line-through; }
+
+#page .Computer {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center; }
 
 #page h1 {
   text-align: center;
