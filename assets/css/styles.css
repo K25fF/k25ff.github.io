@@ -289,7 +289,7 @@ a.current {
   padding-bottom: 15px;
   margin-top: 0px; }
 
-.content p:last-of-type, .content h2:last-of-type {
+.content p:last-of-type, .content h2:last-of-type, .content ol:last-of-type {
   padding-bottom: 15px;
   margin-bottom: 0px; }
 
@@ -376,3 +376,15 @@ a.current {
 #page .center-image {
   margin: 0 auto;
   display: block; }
+
+/* STUFF FOR THE BLOG SECTION */
+.post-nav {
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 0px; }
+
+.post-nav div {
+  flex: 1 1 0; }
+
+.post-nav-next {
+  text-align: right; }
