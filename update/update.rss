@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Chiasmata Update Feed</title>
+    <description>A feed of the Chiasmata update posts.</description>
+    <link></link>
+    <lastBuildDate>Wed, 11 Dec 2019 15:28:09 +0000</lastBuildDate>
+    <pubDate>Wed, 11 Dec 2019 15:28:09 +0000</pubDate>
+    <ttl>1800</ttl>
+    
+    
+    <item>
+      <title>True Faces Visible</title>
+      <link>/update/2019/12/11/True-Faces-Visible.html</link>
+      <guid isPermaLink="true">/update/2019/12/11/True-Faces-Visible.html</guid>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+    
+  </channel>
+</rss>
