@@ -1,610 +1,315 @@
-body {
-  color: #ffffff;
-  margin: 0;
-  font-family: "courier", "monospace";
-  background-color: #535353; }
+body { color: #ffffff; margin: 0; font-family: "courier", "monospace"; background-color: #535353; }
 
-@media (orientation: portrait) and (max-width: 850px) {
-  body, .navbutton, .dropbtn {
-    font-size: 2em; }
+@media (orientation: portrait) and (max-width: 850px) { body, .navbutton, .dropbtn { font-size: 2em; } nav { font-size: 2.25em; } #page.small { font-size: 1.5em; } }
 
-  nav {
-    font-size: 2.25em; }
-
-  #page.small {
-    font-size: 1.5em; } }
 /* NAVBAR STUFF */
-#navbar {
-  background-color: #0C0C0C;
-  color: #ffffff;
-  margin: auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  max-width: 1000px;
-  min-width: 800px;
-  font-size: 0px;
-  height: 102px; }
+#navbar { background-color: #0C0C0C; color: #ffffff; margin: auto; padding-top: 5px; padding-bottom: 5px; max-width: 1000px; min-width: 800px; font-size: 0px; height: 102px; }
 
-nav {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  margin: auto;
-  font-size: 1.25em;
-  max-width: 1000px; }
+nav { background-color: #000000; color: #ffffff; font-family: 'Roboto', sans-serif; margin: auto; font-size: 1.25em; max-width: 1000px; }
 
-.navbutton {
-  font-family: inherit;
-  font-size: 1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: black;
-  color: inherit;
-  border: none;
-  cursor: pointer; }
+.navbutton { font-family: inherit; font-size: 1em; padding-top: 10px; padding-bottom: 10px; background-color: black; color: inherit; border: none; cursor: pointer; }
 
-.navbutton:hover {
-  background-color: #111111; }
+.navbutton:hover { background-color: #111111; }
 
-nav span {
-  display: inline-block; }
+nav span { display: inline-block; }
 
-#leftlinks {
-  padding-left: 40px; }
+#leftlinks { padding-left: 40px; }
 
-#rightlinks {
-  float: right;
-  padding-right: 40px;
-  padding-top: 5px; }
+#rightlinks { float: right; padding-right: 40px; padding-top: 5px; }
 
-@media (orientation: portrait) and (max-width: 850px) {
-  #rightlinks {
-    clear: both;
-    float: none;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding: 5px 0; } }
+@media (orientation: portrait) and (max-width: 850px) { #rightlinks { clear: both; float: none; margin: 0 auto; display: block; text-align: center; padding: 5px 0; } }
+
 /* Dropdowns */
 /* Style The Dropdown Button */
-.dropbtn {
-  font-family: inherit;
-  font-size: 1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: inherit;
-  background-color: black;
-  border: none;
-  cursor: pointer; }
+.dropbtn { font-family: inherit; font-size: 1em; padding-top: 10px; padding-bottom: 10px; color: inherit; background-color: black; border: none; cursor: pointer; }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block; }
+.dropdown { position: relative; display: inline-block; }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #111111;
-  min-width: 160px;
-  z-index: 1; }
+.dropdown-content { display: none; position: absolute; background-color: #111111; min-width: 160px; z-index: 1; }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
+.dropdown-content a { color: white; padding: 12px 16px; text-decoration: none; display: block; }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #555555; }
+.dropdown-content a:hover { background-color: #555555; }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block; }
+.dropdown:hover .dropdown-content { display: block; }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #111111; }
+.dropdown:hover .dropbtn { background-color: #111111; }
 
 /* Cast page stylings */
 /* Create three equal columns that floats next to each other */
-.column {
-  width: 100%;
-  float: left;
-  height: 166px; }
+.column { width: 100%; float: left; height: 166px; }
 
-.column img {
-  float: left;
-  margin-top: 5px;
-  margin-right: 5px; }
+.column img { float: left; margin-top: 5px; margin-right: 5px; }
 
-.column p {
-  margin-right: 5px; }
+.column p { margin-right: 5px; }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
+.row:after { content: ""; display: table; clear: both; }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (min-width: 850px) {
-  .column {
-    float: left;
-    width: 33.33%;
-    height: 166px; } }
+@media screen and (min-width: 850px) { .column { float: left; width: 33.33%; height: 166px; } }
+
 /* PINK-BASED COLOUR-SWITCHING */
 /* body */
-body.pink {
-  background: #644865;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#644865, #281e29);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#644865, #281e29);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#644865, #281e29);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#644865, #281e29);
-  /* Standard syntax */ }
+body.pink { background: #644865; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(#644865, #281e29); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(#644865, #281e29); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(#644865, #281e29); /* For Firefox 3.6 to 15 */ background: linear-gradient(#644865, #281e29); /* Standard syntax */ }
 
-body.pink_1 {
-  background: #503d51;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#503d51, #282129);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#503d51, #282129);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#503d51, #282129);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#503d51, #282129);
-  /* Standard syntax */ }
+body.pink_1 { background: #503d51; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(#503d51, #282129); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(#503d51, #282129); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(#503d51, #282129); /* For Firefox 3.6 to 15 */ background: linear-gradient(#503d51, #282129); /* Standard syntax */ }
 
-body.pink_2 {
-  background: #3c333c;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#3c333c, #282528);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#3c333c, #282528);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#3c333c, #282528);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#3c333c, #282528);
-  /* Standard syntax */ }
+body.pink_2 { background: #3c333c; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(#3c333c, #282528); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(#3c333c, #282528); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(#3c333c, #282528); /* For Firefox 3.6 to 15 */ background: linear-gradient(#3c333c, #282528); /* Standard syntax */ }
 
 /* Secret Stuff! */
-.secret_00 {
-  background-image: url("/chiasmata/images/etc/clue_00.png");
-  background-repeat: no-repeat;
-  background-position: calc(50% + 650px) 450px;
-  background-size: 210px 210px; }
+.secret_00 { background-image: url("/chiasmata/images/etc/clue_00.png"); background-repeat: no-repeat; background-position: calc(50% + 650px) 450px; background-size: 210px 210px; }
 
-.secret_01 {
-  background-image: url("/chiasmata/images/etc/clue_01.png");
-  background-repeat: no-repeat;
-  background-position: calc(50% + 600px) 750px;
-  background-size: 210px 210px; }
+.secret_01 { background-image: url("/chiasmata/images/etc/clue_01.png"); background-repeat: no-repeat; background-position: calc(50% + 600px) 750px; background-size: 210px 210px; }
 
-.secret_02 {
-  position: absolute;
-  top: 700px;
-  left: -150px; }
+.secret_02 { position: absolute; top: 700px; left: -150px; }
 
-.secret_03 {
-  position: absolute;
-  top: 150px;
-  left: -300px; }
+.secret_03 { position: absolute; top: 150px; left: -300px; }
 
-.secret_04 {
-  /* page 150 */
-  position: absolute;
-  top: 400px;
-  left: -170px; }
+.secret_04 { /* page 150 */ position: absolute; top: 400px; left: -170px; }
 
-.secret_05 {
-  /* page 183 */
-  position: absolute;
-  top: 550px;
-  left: -160px; }
+.secret_05 { /* page 183 */ position: absolute; top: 550px; left: -160px; }
 
 /* content */
-body.pink .content {
-  background-color: #351e36; }
+body.pink .content { background-color: #351e36; }
 
-body.pink_1 .content {
-  background-color: #2c1d2d; }
+body.pink_1 .content { background-color: #2c1d2d; }
 
-body.pink_2 .content {
-  background-color: #2c1d2d; }
+body.pink_2 .content { background-color: #2c1d2d; }
 
 /* other */
-body.pink #page {
-  background-color: #070004;
-  color: #FFF8FC; }
+body.pink #page { background-color: #070004; color: #FFF8FC; }
 
-body.pink_1 #page {
-  background-color: #030002;
-  color: #fffefe; }
+body.pink_1 #page { background-color: #030002; color: #fffefe; }
 
-body.pink nav {
-  background-color: #070004; }
+body.pink nav { background-color: #070004; }
 
-body.pink_1 nav {
-  background-color: #030002; }
+body.pink_1 nav { background-color: #030002; }
 
-body.pink #navbar {
-  background-color: #0B090C; }
+body.pink #navbar { background-color: #0B090C; }
 
-body.pink_1 #navbar {
-  background-color: #0C0B0C; }
+body.pink_1 #navbar { background-color: #0C0B0C; }
 
 /* */
 /* Spooky-style, dim and/or dark */
-body.dark {
-  background-color: #282828; }
+body.dark { background-color: #282828; }
 
-body.dark .content {
-  background-color: #1b1b1b; }
+body.dark .content { background-color: #1b1b1b; }
+
+/* Spooky, yet spookier... */
+body.darker { background-color: #0f0f0f; background-image: url("/assets/images/static.png"); background-repeat: repeat; }
+
+body.darker .content { background-color: #151515; }
 
 /* Someone else is spooky */
-body.orange {
-  background-color: #5c514d; }
+body.orange { background-color: #5c514d; }
 
-body.orange .content {
-  background-color: #38322f; }
+body.orange .content { background-color: #38322f; }
 
 /* Other general Chiasmata page bits */
-.content {
-  background-color: #333333;
-  font-family: 'Arial', sans-serif;
-  display: block;
-  margin: auto;
-  margin-top: 0;
-  max-width: 920px;
-  min-width: 600px;
-  padding: 0 40px;
-  overflow-x: visible;
-  position: relative; }
+.content { background-color: #333333; font-family: 'Arial', sans-serif; display: block; margin: auto; margin-top: 0; max-width: 920px; min-width: 600px; padding: 0 40px; overflow-x: visible; position: relative; }
 
 /* link colors */
-a:link {
-  color: #aaaaaa;
-  text-decoration: none; }
+a:link { color: #aaaaaa; text-decoration: none; }
 
-a:visited {
-  color: #777777;
-  text-decoration: none; }
+a:visited { color: #777777; text-decoration: none; }
 
-a:hover {
-  color: #ffffff;
-  text-decoration: none; }
+a:hover { color: #ffffff; text-decoration: none; }
 
-a:active {
-  color: #777777;
-  text-decoration: none; }
+a:active { color: #777777; text-decoration: none; }
 
-a.current {
-  color: green; }
+a.current { color: green; }
 
-#page {
-  background-color: #000000;
-  padding: 0 25px;
-  display: block;
-  margin: auto;
-  margin-top: 0;
-  max-width: 750px;
-  min-width: 550px;
-  position: relative; }
+#page { background-color: #000000; padding: 0 25px; display: block; margin: auto; margin-top: 0; max-width: 750px; min-width: 550px; position: relative; }
 
 /* This is to make the things meet the bottom of the page, because margins in CSS are weird. */
-.content h1:first-of-type, .content h2:first-of-type, .content h3:first-of-type {
-  padding-top: 19px;
-  padding-bottom: 15px;
-  margin-top: 0px; }
+.content h1:first-of-type, .content h2:first-of-type, .content h3:first-of-type { padding-top: 19px; padding-bottom: 15px; margin-top: 0px; }
 
-.content p:last-of-type, .content h2:last-of-type, .content ol:last-of-type {
-  padding-bottom: 15px;
-  margin-bottom: 0px; }
+.content p:last-of-type, .content h2:last-of-type, .content ol:last-of-type { padding-bottom: 15px; margin-bottom: 0px; }
 
-#page .dialogue {
-  margin-left: 56px; }
+#page .dialogue { margin-left: 56px; }
 
-.dialogue p {
-  margin: 5px; }
+.dialogue p { margin: 5px; }
 
-#page .Sam {
-  color: #006cff; }
+#page .Sam { color: #006cff; }
 
-#page .Aidan {
-  color: #00ff90; }
+#page .Aidan { color: #00ff90; }
 
-#page .Daniel {
-  color: #ff5400; }
+#page .Daniel { color: #ff5400; }
 
-#page .Bonnie {
-  color: #ffd800; }
+#page .Bonnie { color: #ffd800; }
 
-#page .Jacqueline {
-  color: #FF0000; }
+#page .Jacqueline { color: #FF0000; }
 
-#page .Clara {
-  color: #88ff00; }
+#page .Clara { color: #88ff00; }
 
-#page .Leo {
-  color: #ffba00; }
+#page .Leo { color: #ffba00; }
 
-#page .Ghost {
-  color: #b58400; }
+#page .Ghost { color: #b58400; }
 
-#page .Omar {
-  color: #593eff; }
+#page .Omar { color: #593eff; }
 
-#page .David {
-  color: #ff9000; }
+#page .David { color: #ff9000; }
 
-#page .Dawn {
-  color: #3041ff; }
+#page .Dawn { color: #3041ff; }
 
-#page .Ash {
-  color: #00ff00; }
+#page .Ash { color: #00ff00; }
 
-#page .Anders {
-  color: #ff0096; }
+#page .Anders { color: #ff0096; }
 
-#page .green_mystery {
-  color: #00ff69; }
+#page .green_mystery { color: #00ff69; }
 
-#page .orange_mystery {
-  color: #FF8B00; }
+#page .orange_mystery { color: #FF8B00; }
 
-#page .Robot {
-  font-family: 'Courier New', Courier, monospace; }
+#page .Robot { font-family: 'Courier New', Courier, monospace; }
 
-#page .other_mystery {
-  text-align: right;
-  font-family: 'Courier New', Courier, monospace; }
+#page .other_mystery { text-align: right; font-family: 'Courier New', Courier, monospace; }
 
-#page .small {
-  font-size: 0.5em; }
+#page .small { font-size: 0.5em; }
 
-.blink_me {
-  animation: blinker 1s step-start infinite; }
+.blink_me { animation: blinker 1s step-start infinite; }
 
-@keyframes blinker {
-  50% {
-    opacity: 0; } }
-#page img {
-  margin: 0 -25px; }
+@keyframes blinker { 50% { opacity: 0; } }
 
-#page .system {
-  color: #ffffff; }
+#page img { margin: 0 -25px; }
 
-#page .Archie {
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  text-decoration: line-through; }
+#page .system { color: #ffffff; }
 
-#page .Computer {
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center; }
+#page .Archie { font-family: 'Courier New', Courier, monospace; text-align: center; text-decoration: line-through; }
 
-#page h1 {
-  text-align: center;
-  padding: 14px 0; }
+#page .Computer { font-family: 'Courier New', Courier, monospace; text-align: center; }
 
-#page .center-image {
-  margin: 0 auto;
-  display: block; }
+#page h1 { text-align: center; padding: 14px 0; }
 
-.center-image {
-  margin: 0 auto;
-  display: block; }
+#page .center-image { margin: 0 auto; display: block; }
+
+.center-image { margin: 0 auto; display: block; }
 
 /* STUFF FOR THE BLOG SECTION */
-.post-nav {
-  display: flex;
-  padding-bottom: 15px;
-  margin-bottom: 0px; }
+.post-nav { display: flex; padding-bottom: 15px; margin-bottom: 0px; }
 
-.post-nav div {
-  flex: 1 1 0; }
+.post-nav div { flex: 1 1 0; }
 
-.post-nav-next {
-  text-align: right; }
+.post-nav-next { text-align: right; }
 
 /* Animation stuff? */
 /* Our mixin positions a copy of our text
 directly on our existing text, while
 also setting content to the appropriate
 text set in the data-text attribute. */
-.glitch {
-  position: relative;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  /* Animation provies a slight random skew. Check bottom of doc
-  for more information on how to random skew. */
-  animation: glitch-skew 1s infinite linear alternate-reverse; }
-  .glitch::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    left: 2px;
-    text-shadow: -2px 0 #ff00c1;
-    /* Creates an initial clip for our glitch. This works in
-    a typical top,right,bottom,left fashion and creates a mask
-    to only show a certain part of the glitch at a time. */
-    clip: rect(44px, 450px, 56px, 0);
-    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
-    with an alternating animation to keep things fresh. */
-    animation: glitch-anim 5s infinite linear alternate-reverse; }
-  .glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    left: -2px;
-    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-    animation: glitch-anim2 1s infinite linear alternate-reverse; }
+.glitch { position: relative; color: white; font-family: 'Courier New', Courier, monospace; /* Animation provies a slight random skew. Check bottom of doc
+for more information on how to random skew. */ animation: glitch-skew 1s infinite linear alternate-reverse; }
+
+.glitch::before { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 2px; text-shadow: -2px 0 #ff00c1; /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */ clip: rect(44px, 450px, 56px, 0); /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */ animation: glitch-anim 5s infinite linear alternate-reverse; }
+
+.glitch::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: -2px; text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1; animation: glitch-anim2 1s infinite linear alternate-reverse; }
 
 /* Creates an animation with 20 steaps. For each step, it calculates 
 a percentage for the specific step. It then generates a random clip
 box to be used for the random glitch effect. Also adds a very subtle
 skew to change the 'thickness' of the glitch.*/
-@keyframes glitch-anim {
-  0% {
-    clip: rect(18px, 9999px, 46px, 0);
-    transform: skew(0.68deg); }
-  5% {
-    clip: rect(19px, 9999px, 22px, 0);
-    transform: skew(0.25deg); }
-  10% {
-    clip: rect(45px, 9999px, 48px, 0);
-    transform: skew(0.44deg); }
-  15% {
-    clip: rect(9px, 9999px, 9px, 0);
-    transform: skew(0.3deg); }
-  20% {
-    clip: rect(32px, 9999px, 27px, 0);
-    transform: skew(0.76deg); }
-  25% {
-    clip: rect(93px, 9999px, 1px, 0);
-    transform: skew(0.27deg); }
-  30% {
-    clip: rect(20px, 9999px, 30px, 0);
-    transform: skew(0.99deg); }
-  35% {
-    clip: rect(77px, 9999px, 31px, 0);
-    transform: skew(0.6deg); }
-  40% {
-    clip: rect(18px, 9999px, 71px, 0);
-    transform: skew(0.51deg); }
-  45% {
-    clip: rect(77px, 9999px, 19px, 0);
-    transform: skew(0.34deg); }
-  50% {
-    clip: rect(87px, 9999px, 71px, 0);
-    transform: skew(0.9deg); }
-  55% {
-    clip: rect(34px, 9999px, 29px, 0);
-    transform: skew(0.48deg); }
-  60% {
-    clip: rect(41px, 9999px, 62px, 0);
-    transform: skew(0.06deg); }
-  65% {
-    clip: rect(89px, 9999px, 24px, 0);
-    transform: skew(0.67deg); }
-  70% {
-    clip: rect(59px, 9999px, 44px, 0);
-    transform: skew(0.67deg); }
-  75% {
-    clip: rect(27px, 9999px, 75px, 0);
-    transform: skew(0.19deg); }
-  80% {
-    clip: rect(48px, 9999px, 62px, 0);
-    transform: skew(0.34deg); }
-  85% {
-    clip: rect(58px, 9999px, 59px, 0);
-    transform: skew(0.43deg); }
-  90% {
-    clip: rect(78px, 9999px, 22px, 0);
-    transform: skew(0.47deg); }
-  95% {
-    clip: rect(91px, 9999px, 87px, 0);
-    transform: skew(0.95deg); }
-  100% {
-    clip: rect(68px, 9999px, 97px, 0);
-    transform: skew(0.61deg); } }
-@keyframes glitch-anim2 {
-  0% {
-    clip: rect(4px, 9999px, 26px, 0);
-    transform: skew(0.99deg); }
-  5% {
-    clip: rect(30px, 9999px, 51px, 0);
-    transform: skew(0.14deg); }
-  10% {
-    clip: rect(58px, 9999px, 51px, 0);
-    transform: skew(0.38deg); }
-  15% {
-    clip: rect(93px, 9999px, 58px, 0);
-    transform: skew(0.53deg); }
-  20% {
-    clip: rect(18px, 9999px, 7px, 0);
-    transform: skew(0.39deg); }
-  25% {
-    clip: rect(94px, 9999px, 60px, 0);
-    transform: skew(0.08deg); }
-  30% {
-    clip: rect(4px, 9999px, 36px, 0);
-    transform: skew(0.95deg); }
-  35% {
-    clip: rect(75px, 9999px, 98px, 0);
-    transform: skew(0.31deg); }
-  40% {
-    clip: rect(33px, 9999px, 74px, 0);
-    transform: skew(0.96deg); }
-  45% {
-    clip: rect(59px, 9999px, 23px, 0);
-    transform: skew(0.3deg); }
-  50% {
-    clip: rect(51px, 9999px, 30px, 0);
-    transform: skew(0.48deg); }
-  55% {
-    clip: rect(68px, 9999px, 18px, 0);
-    transform: skew(0.55deg); }
-  60% {
-    clip: rect(25px, 9999px, 31px, 0);
-    transform: skew(0.13deg); }
-  65% {
-    clip: rect(31px, 9999px, 27px, 0);
-    transform: skew(0.88deg); }
-  70% {
-    clip: rect(79px, 9999px, 47px, 0);
-    transform: skew(0.85deg); }
-  75% {
-    clip: rect(60px, 9999px, 94px, 0);
-    transform: skew(0.93deg); }
-  80% {
-    clip: rect(54px, 9999px, 44px, 0);
-    transform: skew(0.69deg); }
-  85% {
-    clip: rect(100px, 9999px, 15px, 0);
+@keyframes glitch-anim { 0% { clip: rect(82px, 9999px, 73px, 0);
     transform: skew(0.98deg); }
-  90% {
-    clip: rect(54px, 9999px, 52px, 0);
-    transform: skew(0.23deg); }
-  95% {
-    clip: rect(77px, 9999px, 36px, 0);
-    transform: skew(0.97deg); }
-  100% {
-    clip: rect(79px, 9999px, 50px, 0);
-    transform: skew(0.47deg); } }
-@keyframes glitch-skew {
-  0% {
-    transform: skew(2deg); }
-  10% {
-    transform: skew(5deg); }
-  20% {
-    transform: skew(0deg); }
-  30% {
-    transform: skew(-3deg); }
-  40% {
-    transform: skew(4deg); }
-  50% {
-    transform: skew(5deg); }
-  60% {
-    transform: skew(0deg); }
-  70% {
-    transform: skew(-1deg); }
-  80% {
-    transform: skew(3deg); }
-  90% {
-    transform: skew(-2deg); }
-  100% {
-    transform: skew(1deg); } }
+  5% { clip: rect(30px, 9999px, 41px, 0);
+    transform: skew(0.02deg); }
+  10% { clip: rect(99px, 9999px, 44px, 0);
+    transform: skew(0.01deg); }
+  15% { clip: rect(22px, 9999px, 27px, 0);
+    transform: skew(0.25deg); }
+  20% { clip: rect(24px, 9999px, 92px, 0);
+    transform: skew(0.71deg); }
+  25% { clip: rect(50px, 9999px, 50px, 0);
+    transform: skew(0.03deg); }
+  30% { clip: rect(40px, 9999px, 74px, 0);
+    transform: skew(0.16deg); }
+  35% { clip: rect(87px, 9999px, 76px, 0);
+    transform: skew(0.36deg); }
+  40% { clip: rect(56px, 9999px, 58px, 0);
+    transform: skew(0.78deg); }
+  45% { clip: rect(40px, 9999px, 91px, 0);
+    transform: skew(0.67deg); }
+  50% { clip: rect(19px, 9999px, 89px, 0);
+    transform: skew(0.96deg); }
+  55% { clip: rect(66px, 9999px, 65px, 0);
+    transform: skew(0.64deg); }
+  60% { clip: rect(33px, 9999px, 77px, 0);
+    transform: skew(0.41deg); }
+  65% { clip: rect(32px, 9999px, 26px, 0);
+    transform: skew(0.15deg); }
+  70% { clip: rect(16px, 9999px, 78px, 0);
+    transform: skew(0.87deg); }
+  75% { clip: rect(71px, 9999px, 68px, 0);
+    transform: skew(0.06deg); }
+  80% { clip: rect(29px, 9999px, 87px, 0);
+    transform: skew(0.69deg); }
+  85% { clip: rect(57px, 9999px, 97px, 0);
+    transform: skew(0.26deg); }
+  90% { clip: rect(58px, 9999px, 45px, 0);
+    transform: skew(0.15deg); }
+  95% { clip: rect(66px, 9999px, 9px, 0);
+    transform: skew(0.37deg); }
+  100% { clip: rect(80px, 9999px, 24px, 0);
+    transform: skew(0.76deg); } }
+
+@keyframes glitch-anim2 { 0% { clip: rect(16px, 9999px, 78px, 0);
+    transform: skew(0.62deg); }
+  5% { clip: rect(75px, 9999px, 50px, 0);
+    transform: skew(0.43deg); }
+  10% { clip: rect(55px, 9999px, 22px, 0);
+    transform: skew(0.37deg); }
+  15% { clip: rect(39px, 9999px, 47px, 0);
+    transform: skew(0.46deg); }
+  20% { clip: rect(98px, 9999px, 25px, 0);
+    transform: skew(0.27deg); }
+  25% { clip: rect(98px, 9999px, 85px, 0);
+    transform: skew(0.59deg); }
+  30% { clip: rect(93px, 9999px, 17px, 0);
+    transform: skew(0.64deg); }
+  35% { clip: rect(69px, 9999px, 12px, 0);
+    transform: skew(0.05deg); }
+  40% { clip: rect(3px, 9999px, 38px, 0);
+    transform: skew(0.57deg); }
+  45% { clip: rect(41px, 9999px, 54px, 0);
+    transform: skew(0.32deg); }
+  50% { clip: rect(41px, 9999px, 19px, 0);
+    transform: skew(0.89deg); }
+  55% { clip: rect(68px, 9999px, 15px, 0);
+    transform: skew(0.3deg); }
+  60% { clip: rect(77px, 9999px, 40px, 0);
+    transform: skew(0.67deg); }
+  65% { clip: rect(57px, 9999px, 5px, 0);
+    transform: skew(0.49deg); }
+  70% { clip: rect(35px, 9999px, 89px, 0);
+    transform: skew(0.43deg); }
+  75% { clip: rect(26px, 9999px, 90px, 0);
+    transform: skew(0.29deg); }
+  80% { clip: rect(27px, 9999px, 71px, 0);
+    transform: skew(0.74deg); }
+  85% { clip: rect(5px, 9999px, 56px, 0);
+    transform: skew(0.98deg); }
+  90% { clip: rect(26px, 9999px, 18px, 0);
+    transform: skew(0.47deg); }
+  95% { clip: rect(63px, 9999px, 64px, 0);
+    transform: skew(0.54deg); }
+  100% { clip: rect(87px, 9999px, 42px, 0);
+    transform: skew(0.09deg); } }
+
+@keyframes glitch-skew { 0% { transform: skew(0deg); }
+  10% { transform: skew(-4deg); }
+  20% { transform: skew(3deg); }
+  30% { transform: skew(1deg); }
+  40% { transform: skew(3deg); }
+  50% { transform: skew(5deg); }
+  60% { transform: skew(-4deg); }
+  70% { transform: skew(3deg); }
+  80% { transform: skew(3deg); }
+  90% { transform: skew(-1deg); }
+  100% { transform: skew(-1deg); } }
+
+/*# sourceMappingURL=styles.css.map */
