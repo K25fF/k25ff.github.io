@@ -36,6 +36,7 @@
     </span>
     <span id="rightlinks">
         <a href="http://k25ff.tumblr.com"><img src="/assets/images/tumblr.png" alt="Tumblr"></a>
+        <a href="https://https://bsky.app/profile/k25ff.bsky.social"><img src="/assets/images/bsky.png" alt="Bluesky"></img></a>
         <a href="http://twitter.com/k25ff"><img src="/assets/images/twitter.png" alt="Tumblr"></a>
     </span>
 </nav>
@@ -104,5 +105,50 @@
         </div>
     </div>
 </div></section>
+    <section id="disclaimer">
+    <div class="disclaimer-footer">
+        <div class="disclaimer-content">
+            <img src="/assets/images/Homemade Logos Corp.png" alt="Homemade Logos Corp" class="disclaimer-image">
+            <span style="font-weight: bold;">Homemade Websites Corp: </spans><span id="randomText" style="font-weight: normal;">Loading...</span>
+        </div>
+    </div>
+    <script>
+        (function() {
+            // Only run if we haven't already initialized
+            if (window.randomTextInitialized) return;
+            window.randomTextInitialized = true;
+        
+            let textArray = [];
+        
+            // Load phrases from external JSON file
+            fetch('/assets/data/disclaimers.json')
+                .then(response => response.json())
+                .then(data => {
+                    textArray = data;
+                    displayRandomText();
+                })
+                .catch(error => {
+                    console.warn('Could not load random phrases:', error);
+                    // Fallback to a default phrase
+                    textArray = ["Welcome to our website!"];
+                    displayRandomText();
+                });
+        
+            function getRandomText() {
+                const randomIndex = Math.floor(Math.random() * textArray.length);
+                return textArray[randomIndex];
+            }
+        
+            function displayRandomText() {
+                const textElement = document.getElementById('randomText');
+                if (textElement && textArray.length > 0) {
+                    textElement.innerHTML = getRandomText();
+                }
+            }
+        
+            // Don't auto-display on DOM ready since we need to load the data first
+        })();
+    </script>
+</section>
   </body>
 </html>
