@@ -48,7 +48,7 @@
     <div class="disclaimer-footer">
         <div class="disclaimer-content">
             <img src="/assets/images/Homemade Logos Corp.png" alt="Homemade Logos Corp" class="disclaimer-image">
-            <span style="font-weight: bold;">Homemade Websites Corp: </spans><span id="randomText" style="font-weight: normal;">Loading...</span>
+            <span class="disclaimer-text"><span style="font-weight: bold;">Homemade Websites Corp:</span> <span id="randomText" style="font-weight: normal;">Loading...</span></span>
         </div>
     </div>
     <script>
@@ -80,8 +80,20 @@
         
             function displayRandomText() {
                 const textElement = document.getElementById('randomText');
+                const companyElement = document.querySelector('.disclaimer-text');
+                
                 if (textElement && textArray.length > 0) {
-                    textElement.innerHTML = getRandomText();
+                    const randomText = getRandomText();
+                    const parts = randomText.split('|');
+                    const disclaimerText = parts[0];
+                    const useAltName = parts[1] === 'ALT_NAME';
+                    
+                    // Update the disclaimer text
+                    textElement.innerHTML = disclaimerText;
+                    
+                    // Update the company name
+                    const companyName = useAltName ? 'Hommad Wbsits Corp: ' : 'Homemade Websites Corp: ';
+                    companyElement.innerHTML = '<span style="font-weight: bold;">' + companyName + '</span><span id="randomText">' + disclaimerText + '</span>';
                 }
             }
         
