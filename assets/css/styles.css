@@ -372,7 +372,6 @@ body.red .content {
 
 body.red #page {
   background-color: #070000;
-  color: #fff8f8;
 }
 
 body.red nav {
@@ -512,6 +511,16 @@ a.current {
   font-size: 1em;
   color: #ffffff;
   flex-grow: 1;
+}
+
+.archive-item {
+  display: flex;
+}
+
+.archive-date {
+  min-width: 10em;
+  flex-shrink: 0;
+  text-align: right;
 }
 
 .no-click {
